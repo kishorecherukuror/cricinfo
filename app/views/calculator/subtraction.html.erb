@@ -1,2 +1,15 @@
-<h1>Calculator#subtraction</h1>
-<p>Find me in app/views/calculator/subtraction.html.erb</p>
+<h1>Calculator#Subtraction</h1>
+
+<%= form_tag do %>
+
+<%= render 'form' %>
+
+<p><%= submit_tag "Subtraction" %></p>
+
+<% end %>
+
+
+<%if @c!=0 %>
+
+Subtraction value : <%= @c %>
+<% end %>

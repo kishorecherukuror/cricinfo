@@ -15,11 +15,13 @@ Rails.application.routes.draw do
   post 'calculator/addition'
 
   get 'calculator/subtraction'
+  post 'calculator/subtraction'
 
   get 'calculator/mutiplication'
   post 'calculator/mutiplication'
 
   get 'calculator/division'
+  post 'calculator/subtraction'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

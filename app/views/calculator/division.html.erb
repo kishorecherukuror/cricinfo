@@ -1,2 +1,15 @@
-<h1>Calculator#division</h1>
-<p>Find me in app/views/calculator/division.html.erb</p>
+<h1>Calculator#Division</h1>
+
+<%= form_tag do %>
+
+<%= render 'form' %>
+
+<p><%= submit_tag "Division" %></p>
+
+<% end %>
+
+<%if @c!=0 %>
+
+
+Division value : <%= @c %>
+<% end %>

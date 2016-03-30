@@ -6,6 +6,9 @@ class CalculatorController < ApplicationController
   end
 
   def subtraction
+    @a = params[:a]
+    @b = params[:b]
+    @c = @a.to_i - @b.to_i
 
   end
 
@@ -16,5 +19,8 @@ class CalculatorController < ApplicationController
   end
 
   def division
+    @a = params[:a]
+    @b = params[:b]
+    @c = @a.to_f / @b.to_f
   end
 end
