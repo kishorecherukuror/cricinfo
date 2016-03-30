@@ -18,5 +18,8 @@ class MatchesController < ApplicationController
     @date = params[:date]
     @country = params[:country]
 
+    @match = Match.new(name: params[:name], member: params[:member], location: params[:location], matchdate: params[:date], country: params[:country])
+    @match.save
+
   end
 end
