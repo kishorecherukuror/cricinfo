@@ -1,2 +1,12 @@
 <h1>Calculator#subtraction</h1>
 <p>Find me in app/views/calculator/subtraction.html.erb</p>
+
+<h2>Arthimatic Subtraction</h2>
+<%= form_tag calculator_subtraction_path do %>
+
+<%= render 'form' %>
+
+<%= submit_tag "Subtract"%> <br/>
+<%end%>
+
+After Dividing result is : <%= @c %>

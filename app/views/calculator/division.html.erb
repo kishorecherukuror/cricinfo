@@ -1,2 +1,11 @@
 <h1>Calculator#division</h1>
 <p>Find me in app/views/calculator/division.html.erb</p>
+<h2>Arthimatic Division</h2>
+<%= form_tag calculator_division_path do %>
+
+<%= render 'form' %>
+
+<%= submit_tag "Divide"%> <br/>
+<%end%>
+
+After Dividing result is : <%= @c.to_f %>
