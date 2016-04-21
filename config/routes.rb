@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'sports/new'
+
+  get 'sports/create'
+  post 'sports/create'
+
+  get 'sports/index'
+  post 'sports/index'
+
   get 'matches/new'
 
   get 'matches/create'

@@ -1,8 +1,20 @@
+<TABLE><TR>
+<th>NAME</th>
+<th>MEMBERS</th>
+<th>LOCATION</th>
+<th>MACH DATE</th>
+<th>COUNTRY</th>
+</tr>
+<% @m.each do |a| %>
+<tr>
 
-Match information:
+<td><%= a.name%></td>
+<td><%= a.member%></td>
+<td><%= a.location%></td>
+<td><%= a.matchdate%></td>
+<td><%= a.country%></td>
 
-<p>Name : <%= @name %></p>
-<p>Members: <%= @members %></p>
-<p>Location: <%= @location %></p>
-<p>Date: <%= @date %></p>
-<p>Country: <%= @country %></p>
+
+
+<%end%>
+</tr></TABLE>

@@ -3,7 +3,15 @@ class MatchesController < ApplicationController
   end
 
   def create
-     end
+   # @m=Match.new(name:"ram", member:"15", location:"hyd", matchdate:"12/oct/2016", country:"india")
+   # @m.save
+  @m=Match.new(name:params[:name], member:params[:member],location:params[:location],matchdate:params[:date],country:params[:country])
+  if @m.save
+    @m.inspect
+    redirect_to matches_show_path
+  end
+  end 
+  
 
   def list
   end
@@ -12,11 +20,7 @@ class MatchesController < ApplicationController
   end
 
   def show
-    @name = params[:name]
-    @members = params[:member]
-    @location = params[:location]
-    @date = params[:date]
-    @country = params[:country]
-
+    @m=Match.all
   end
 end
+

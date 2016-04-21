@@ -1,2 +1,17 @@
 <h1>Matches#new</h1>
 <p>Find me in app/views/matches/new.html.erb</p>
+<%= form_tag  matches_create_path do %>
+
+<p>Name: <%= text_field_tag 'name' ,nil, :placeholder => "Enter name" %></p>
+
+<p>Members: <%=select_tag "member", "<option>15</option><option>12</option><option>30</option><option>14</option>".html_safe %> </p>
+
+<p>Location: <%= text_field_tag 'location' %> </p>
+
+<p>Country: <%= text_field_tag 'country' %>  </p>
+
+<p>Date: <%= date_field_tag 'date' %></p>
+
+<p><%= submit_tag %>  </p>
+<% end %>
+

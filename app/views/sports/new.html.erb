@@ -1,0 +1,12 @@
+<h1>Sports#new</h1>
+<h2>Sports...</h2>
+<%= form_for @sportobj , url:{action: 'create'} do |f| %>
+
+Sportname:<%= f.text_field :sportname %><br/>
+Sporttype:<%= f.text_field :sporttype %><br/>
+Board:<%= f.text_field :board %><br/>
+Country:<%= f.text_field :country %><br/>
+
+<%= f.submit %>
+<%end%>
+	
